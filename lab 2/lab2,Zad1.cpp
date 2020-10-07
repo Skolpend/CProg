@@ -2,19 +2,24 @@
 #include <cmath>
 using namespace std;
 
+float f(float x)
+{
+    return (sin(x) * sin(x)) / x;
+}
+
 void printTableHeader()
 {
     cout << "+-----+-----+" << endl;
     cout << "|  x  |  y  |" << endl;
 }
 
-void printTableRow(float x, float y)
+void printTableRow(float x, f)
 {
     cout << "+-----+-----+" << endl;
     cout << "|";
     printf("%4.2f", x);
     cout << " |";
-    printf("%5.2f", y);
+    printf("%5.2f", f);
     cout << "|" << endl;
 }
 
@@ -30,8 +35,7 @@ void getTableFor(float a, float b, float count)
     printTableHeader();
     for (float x = a; x < b; x += step)
     {
-        float y = (sin(x) * sin(x)) / x;
-        printTableRow(x, y);
+        printTableRow(x, f);
     }
     printTableEnd();
 }
@@ -43,8 +47,7 @@ void getTableWhile(float a, float b, float count)
     printTableHeader();
     while (x < b)
     {
-        float y = (sin(x) * sin(x)) / x;
-        printTableRow(x, y);
+        printTableRow(x, f);
         x += step;
     }
     printTableEnd();
@@ -57,8 +60,7 @@ void getTableDoWhile(float a, float b, float count)
     printTableHeader();
     do
     {
-        float y = (sin(x) * sin(x)) / x;
-        printTableRow(x, y);
+        printTableRow(x, f);
         x += step;
     } while (x < b);
     printTableEnd();
