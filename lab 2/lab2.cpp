@@ -13,13 +13,13 @@ void printTableHeader()
     cout << "|  x  |  y  |" << endl;
 }
 
-void printTableRow(float x, f)
+void printTableRow(float x, float y)
 {
     cout << "+-----+-----+" << endl;
     cout << "|";
     printf("%4.2f", x);
     cout << " |";
-    printf("%5.2f", f(x));
+    printf("%5.2f", y);
     cout << "|" << endl;
 }
 
