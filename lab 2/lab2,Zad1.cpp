@@ -25,7 +25,7 @@ void printTableEnd()
 
 float f(float x)
 {
-    return x * x;
+    return pow(x, x);
 }
 
 void getTableFor(float a, float b, float count)
