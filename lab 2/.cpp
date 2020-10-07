@@ -1,4 +1,4 @@
-ï»¿#include <iostream>
+#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -68,11 +68,11 @@ int main()
 {
     setlocale(LC_ALL, "rus");
     float a, b, count;
-    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð°Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ x1 : ";
+    cout << "Ââåäèòå êîàðäèíàòó x1 : ";
     cin >> a;
-    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð°Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ x2 : ";
+    cout << "Ââåäèòå êîàðäèíàòó x2 : ";
     cin >> b;
-    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ ÑˆÐ°Ð³Ð¾Ð² : ";
+    cout << "Ââåäèòå ÷èñëî øàãîâ : ";
     cin >> count;
     getTableFor(a, b, count);
     getTableWhile(a, b, count);
