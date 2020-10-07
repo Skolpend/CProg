@@ -19,7 +19,7 @@ void printTableRow(float x, f)
     cout << "|";
     printf("%4.2f", x);
     cout << " |";
-    printf("%5.2f", f);
+    printf("%5.2f", f(x));
     cout << "|" << endl;
 }
 
@@ -35,7 +35,7 @@ void getTableFor(float a, float b, float count)
     printTableHeader();
     for (float x = a; x < b; x += step)
     {
-        printTableRow(x, f);
+        printTableRow(x, f(x));
     }
     printTableEnd();
 }
@@ -47,7 +47,7 @@ void getTableWhile(float a, float b, float count)
     printTableHeader();
     while (x < b)
     {
-        printTableRow(x, f);
+        printTableRow(x, f(x));
         x += step;
     }
     printTableEnd();
@@ -60,7 +60,7 @@ void getTableDoWhile(float a, float b, float count)
     printTableHeader();
     do
     {
-        printTableRow(x, f);
+        printTableRow(x, f(x));
         x += step;
     } while (x < b);
     printTableEnd();
